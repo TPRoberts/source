@@ -599,6 +599,16 @@ define Device/tl-wr802n-v1
 endef
 TARGET_DEVICES += tl-wr802n-v1
 
+define Device/tl-wr802n-v2
+    $(Device/tplink-4mlzma)
+    DEVICE_TITLE := TP-LINK TL-WR802N v2
+    BOARDNAME := TL-WR802N-v2
+    DEVICE_PROFILE := TLWR802
+    TPLINK_HWID := 0x08020002
+    TPLINK_HWREV := 2
+endef
+TARGET_DEVICES += tl-wr802n-v2
+
 define Device/tl-wr841-v1.5
     $(Device/tplink-4m)
     DEVICE_TITLE := TP-LINK TL-WR841N/ND v1.5
