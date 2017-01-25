@@ -606,6 +606,8 @@ define Device/tl-wr802n-v2
     DEVICE_PROFILE := TLWR802
     TPLINK_HWID := 0x08020002
     TPLINK_HWREV := 2
+    IMAGES += factory-eu.bin
+    IMAGE/factory-eu.bin := append-rootfs | mktplinkfw factory -C EU
 endef
 TARGET_DEVICES += tl-wr802n-v2
 
